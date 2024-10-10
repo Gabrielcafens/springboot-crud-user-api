@@ -1,5 +1,8 @@
-package com.example.demo;
+package com.example.demo.service;
 
+import com.example.demo.record.UserRecord;
+import com.example.demo.persistence.User;
+import com.example.demo.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

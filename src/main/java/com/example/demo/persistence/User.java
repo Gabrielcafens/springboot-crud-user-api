@@ -1,5 +1,6 @@
-package com.example.demo;
+package com.example.demo.persistence;
 
+import com.example.demo.record.UserRecord;
 import jakarta.persistence.*;
 
 import java.util.UUID;
@@ -9,7 +10,7 @@ import java.util.UUID;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String uuid;
     private String name;
