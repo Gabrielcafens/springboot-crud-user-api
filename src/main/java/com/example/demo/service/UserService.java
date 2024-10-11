@@ -34,18 +34,20 @@ public class UserService {
     }
 
     public UserRecord getUserById(Long id) {
-        User user = userRepository.findById(id).orElseThrow(()->new NoSuchElementException(USER_NOT_FOUND));
+        User user = userRepository.findByIdAndDeletedFalse(id)
+                .orElseThrow(()->new NoSuchElementException(USER_NOT_FOUND));
         return convertToUserRecord(user);
     }
 
     public UserRecord getUserByCpf(String cpf) {
-        User user = userRepository.findByCpf(cpf).orElseThrow(()->new NoSuchElementException(USER_NOT_FOUND));
+        User user = userRepository.findByCpfAndDeletedFalse(cpf)
+                .orElseThrow(()->new NoSuchElementException(USER_NOT_FOUND));
         return  convertToUserRecord(user);
     }
 
     public List<UserRecord> listAll() {
         List<UserRecord> recordList = new ArrayList<>();
-        List<User> userList = userRepository.findAll();
+        List<User> userList = userRepository.listAll();
         for (User user: userList){
            recordList.add(convertToUserRecord(user));
         }
@@ -53,7 +55,8 @@ public class UserService {
     }
 
     public UserRecord updateUser(Long id, UserRecord userRecord) {
-        User user = userRepository.findById(id).orElseThrow(()->new NoSuchElementException(USER_NOT_FOUND));
+        User user = userRepository.findByIdAndDeletedFalse(id)
+                .orElseThrow(()->new NoSuchElementException(USER_NOT_FOUND));
         user.setName(userRecord.name());
         user.setCpf(userRecord.cpf());
         user.setAge(userRecord.age());
@@ -64,8 +67,10 @@ public class UserService {
     }
 
     public void  deleteById(Long id) {
-        User user = userRepository.findById(id).orElseThrow(()->new NoSuchElementException(USER_NOT_FOUND));
-        userRepository.deleteById(user.getId());
+        User user = userRepository.findByIdAndDeletedFalse(id)
+                .orElseThrow(()->new NoSuchElementException(USER_NOT_FOUND));
+        user.setDeleted(true);
+        userRepository.save(user);
     }
 
 }

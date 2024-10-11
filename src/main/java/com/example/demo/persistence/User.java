@@ -10,7 +10,7 @@ import java.util.UUID;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String uuid;
     private String name;
@@ -18,6 +18,8 @@ public class User {
     private Integer age;
     private String address;
     private String favoriteColor;
+    @Column(nullable = false, columnDefinition = "boolean default false")
+    private boolean deleted;
 
     public User() {
     }
@@ -29,6 +31,7 @@ public class User {
         this.setAge(userRecord.age());
         this.setAddress(userRecord.address());
         this.setFavoriteColor(userRecord.favoriteColor());
+        this.setDeleted(false);
     }
 
     public Long getId() {
@@ -87,4 +90,11 @@ public class User {
         this.favoriteColor = favoriteColor;
     }
 
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
 }
