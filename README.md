@@ -98,7 +98,7 @@ PUT /users/{id}
 ```
 ## Demo Video
 
-![Demo Video](https://drive.google.com/uc?id=1nsaZfQFc3W-sZydM5e9uHHJQVIGVhhTe)
+[![Demo Video](https://img.youtube.com/vi/nsaZfQFc3W-sZydM5e9uHHJQVIGVhhTe/0.jpg)](https://drive.google.com/file/d/1nsaZfQFc3W-sZydM5e9uHHJQVIGVhhTe/view?usp=sharing)
 
 ## Screenshots
 
@@ -116,7 +116,6 @@ PUT /users/{id}
 
 ### Application Running on IntelliJ
 ![Application Running on IntelliJ](https://drive.google.com/uc?id=1O4-NNEOLlbNTzjd8hmVBquIDOgrqvIq3)
-
 
 ## License
 
