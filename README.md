@@ -96,9 +96,9 @@ PUT /users/{id}
   "favoriteColor": "Green"
 }
 ```
-## Demo Video 🎥
+## Demo Video 
 
-[![Video Icon](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Video_icon.svg/1024px-Video_icon.svg.png)](https://drive.google.com/file/d/1nsaZfQFc3W-sZydM5e9uHHJQVIGVhhTe/view?usp=sharing)
+🎥![LinkVideoDemo](https://drive.google.com/file/d/1nsaZfQFc3W-sZydM5e9uHHJQVIGVhhTe/view?usp=sharing)
 
 ## Screenshots 📸
 
