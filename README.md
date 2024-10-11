@@ -96,11 +96,11 @@ PUT /users/{id}
   "favoriteColor": "Green"
 }
 ```
-## Demo Video
+## Demo Video 🎥
 
-[![Demo Video](https://img.youtube.com/vi/nsaZfQFc3W-sZydM5e9uHHJQVIGVhhTe/0.jpg)](https://drive.google.com/file/d/1nsaZfQFc3W-sZydM5e9uHHJQVIGVhhTe/view?usp=sharing)
+[![Video Icon](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Video_icon.svg/1024px-Video_icon.svg.png)](https://drive.google.com/file/d/1nsaZfQFc3W-sZydM5e9uHHJQVIGVhhTe/view?usp=sharing)
 
-## Screenshots
+## Screenshots 📸
 
 ### Create User
 ![Create User](https://drive.google.com/uc?id=1F1Vihv5XT_p8KUJGU5kHiHUmxqQ6OQTR)
