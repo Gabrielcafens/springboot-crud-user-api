@@ -96,6 +96,17 @@ PUT /users/{id}
   "favoriteColor": "Green"
 }
 ```
+## Demo Video
+
+- **[Demo Video](https://drive.google.com/file/d/1nsaZfQFc3W-sZydM5e9uHHJQVIGVhhTe/view?usp=sharing)**
+
+## Screenshots
+
+- **[Screenshot of Create User](https://drive.google.com/file/d/1F1Vihv5XT_p8KUJGU5kHiHUmxqQ6OQTR/view?usp=sharing)**
+- **[Screenshot of Find User by ID](https://drive.google.com/file/d/1XzyJTB1GDWDuhBM9aXc8iAlSnN7y2zB9/view?usp=sharing)**
+- **[Screenshot of Find User by CPF](https://drive.google.com/file/d/1PPfmJSWHjGpA_rVydOIsLi-kr8NnJ4Rd/view?usp=sharing)**
+- **[Screenshot of List All Users](https://drive.google.com/file/d/1X0BLn8QEnZ3EQfQLm98zWzzD9EVj4aNl/view?usp=sharing)**
+- **[Screenshot of the Application Running on IntelliJ](https://drive.google.com/file/d/1O4-NEOLlbNTzjd8hmVBquIDOgrqvIq3/view?usp=sharing)**
 
 ## License
 
