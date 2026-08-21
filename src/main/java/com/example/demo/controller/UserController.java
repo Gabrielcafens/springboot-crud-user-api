@@ -24,17 +24,17 @@ public class UserController {
 
     @GetMapping("/{id}")
     public ResponseEntity<UserRecord>getById(@PathVariable Long id){
-        return ResponseEntity.status(HttpStatus.FOUND).body(userService.getUserById(id));
+        return ResponseEntity.status(HttpStatus.OK).body(userService.getUserById(id));
     }
 
     @GetMapping
     public ResponseEntity<UserRecord>getByCpf(@RequestParam("cpf") String cpf){
-        return ResponseEntity.status(HttpStatus.FOUND).body(userService.getUserByCpf(cpf));
+        return ResponseEntity.status(HttpStatus.OK).body(userService.getUserByCpf(cpf));
     }
 
     @GetMapping("/list")
     public  ResponseEntity<List<UserRecord>>listAll() {
-        return  ResponseEntity.status(HttpStatus.FOUND).body(userService.listAll());
+        return  ResponseEntity.status(HttpStatus.OK).body(userService.listAll());
     }
 
     @PutMapping("/{id}")
